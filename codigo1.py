@@ -1,7 +1,7 @@
 #Codigo, organização das filas (Noção da menor fila)....
 fila1 = list()
 fila2 = list()
-fila3 = list()
+fila3 = []
 fila4 = list()
 while True:
     while True:
