@@ -1,6 +1,5 @@
 from datetime import datetime
 import time
-
 fila1 = list()
 fila2 = list()
 fila3 = list()
@@ -12,53 +11,59 @@ while True:
             cliente = int(input('N: '))
             horai = time.strftime('%H:%M:%S', time.localtime())
             time_1 = datetime.strptime(horai, "%H:%M:%S")
-            aten = str(input('Foi atendido (S): ')).upper() 
-            if aten == 'S':
+            aten = str(input('Foi atendido [S/N]: ')).upper() 
+            if aten in 'Ss':
                 horaf = time.strftime('%H:%M:%S', time.localtime())
                 time_2 = datetime.strptime(horaf,"%H:%M:%S")
-                tempo2 = float(time.strftime('%H.%M', time.localtime()))
                 time_interval = time_2 - time_1
                 fila1.append([cliente, str(time_interval)])
-      
+            else:
+                if aten in 'Ff':
+                    print('Esperando na fila')
+                    
         for f2 in range(1):
             cliente = int(input('N: '))
             horai = time.strftime('%H:%M:%S', time.localtime())
             time_1 = datetime.strptime(horai, "%H:%M:%S")
-            tempo1 = float(time.strftime('%H.%M', time.localtime()))
-            aten = str(input('Foi atendido (S): ')).upper() 
-            if aten == 'S':
+            aten = str(input('Foi atendido [S/N]: ')).upper() 
+            if aten in 'Ss':
                 horaf = time.strftime('%H:%M:%S', time.localtime())
                 time_2 = datetime.strptime(horaf,"%H:%M:%S")
-                tempo2 = float(time.strftime('%H.%M', time.localtime()))
                 time_interval = time_2 - time_1
                 fila2.append([cliente, str(time_interval)])
+            else:
+                if aten in 'Ff':
+                    print('Esperando na fila')
     
         for f3 in range(1):
             cliente = int(input('N: '))
             horai = time.strftime('%H:%M:%S', time.localtime())
             time_1 = datetime.strptime(horai, "%H:%M:%S")
-            tempo1 = float(time.strftime('%H.%M', time.localtime()))
-            aten = str(input('Foi atendido (S): ')).upper() 
-            if aten == 'S':
+            aten = str(input('Foi atendido [S/N]: ')).upper() 
+            if aten in 'Ss':
                 horaf = time.strftime('%H:%M:%S', time.localtime())
                 time_2 = datetime.strptime(horaf,"%H:%M:%S")
-                tempo2 = float(time.strftime('%H.%M', time.localtime()))
                 time_interval = time_2 - time_1
                 fila3.append([cliente, str(time_interval)])
-        
+            else:
+                if aten in 'Ff':
+                    print('Esperando na fila')
+                    
         for f4 in range(1):
             cliente = int(input('N: '))
             horai = time.strftime('%H:%M:%S', time.localtime())
             time_1 = datetime.strptime(horai, "%H:%M:%S")
-            tempo1 = float(time.strftime('%H.%M', time.localtime()))
-            aten = str(input('Foi atendido (S): ')).upper() 
-            if aten == 'S':
+            aten = str(input('Foi atendido [S/N]: ')).upper() 
+            if aten in 'Ss':
                 horaf = time.strftime('%H:%M:%S', time.localtime())
                 time_2 = datetime.strptime(horaf,"%H:%M:%S")
                 tempo2 = float(time.strftime('%H.%M', time.localtime()))
                 time_interval = time_2 - time_1
                 fila4.append([cliente, str(time_interval)])
-            
+            else:
+                if aten in 'Ff':
+                    print('Esperando na fila')
+                    
         if len(fila1) == 3:
             break    
     if len(fila1) == 3:
