@@ -18,8 +18,7 @@ while True:
                 time_interval = time_2 - time_1
                 fila1.append([cliente, str(time_interval)])
             else:
-                if aten in 'Ff':
-                    print('Esperando na fila')
+                print('Esperando na fila')
                     
         for f2 in range(1):
             cliente = int(input('N: '))
@@ -32,8 +31,7 @@ while True:
                 time_interval = time_2 - time_1
                 fila2.append([cliente, str(time_interval)])
             else:
-                if aten in 'Ff':
-                    print('Esperando na fila')
+                print('Esperando na fila')
     
         for f3 in range(1):
             cliente = int(input('N: '))
@@ -46,8 +44,7 @@ while True:
                 time_interval = time_2 - time_1
                 fila3.append([cliente, str(time_interval)])
             else:
-                if aten in 'Ff':
-                    print('Esperando na fila')
+                print('Esperando na fila')
                     
         for f4 in range(1):
             cliente = int(input('N: '))
@@ -61,8 +58,7 @@ while True:
                 time_interval = time_2 - time_1
                 fila4.append([cliente, str(time_interval)])
             else:
-                if aten in 'Ff':
-                    print('Esperando na fila')
+                print('Esperando na fila')
                     
         if len(fila1) == 3:
             break    
